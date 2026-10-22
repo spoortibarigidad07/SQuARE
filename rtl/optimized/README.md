@@ -1,0 +1,1 @@
+Standalone bounded-width arithmetic kernels with signed saturation semantics. FP2 bounded-exact is selected in the integrated MAC. FP4 and Posit4 bounded kernels are supplied as independently addressable design variants; their accumulator semantics differ from the shared wrapping accumulator modes.

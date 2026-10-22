@@ -1,0 +1,12 @@
+*.vcd
+*.fst
+*.log
+*.jou
+*.pb
+*.wdb
+*.bit
+*.dcp
+*.rpt
+__pycache__/
+.sim/
+.build/
