@@ -4,6 +4,8 @@
 
 SQuARE integrates a RISC-V SoC control plane, CNN inference pipeline, and a programmable mixed-format arithmetic fabric for resource-constrained edge intelligence.
 
+**Std. Ref. baselines (Tables 1 and 2):** the format-matched reference MACs are `rtl/compute/posit4_mac_ref_v2.v`, `rtl/compute/fp4_mac_ref_v2.v` and `rtl/compute/fp2_parallel_mac_ref.v`; the proposed units are the corresponding files in `rtl/optimized/`. See [docs/STD_REF_BASELINES.md](docs/STD_REF_BASELINES.md) for the full specification.
+   
 ## System architecture
 
 ```text
