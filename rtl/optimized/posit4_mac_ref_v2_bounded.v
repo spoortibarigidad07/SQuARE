@@ -187,9 +187,7 @@ module posit4_mac_ref_v2_bounded #(
     // (2^ACC_W=65536 is the guaranteed-saturation threshold itself; a
     // different ACC_W would need a different threshold and a
     // different CONTRIB_W, not just a parameter substitution). Same
-    // portable initial+$fatal form as posit4_mac_ref_v2.v, verified in
-    // both Icarus Verilog and Verilator there; Vivado/Genus untested
-    // against this construct in either module.
+    // portable initial+$fatal form as posit4_mac_ref_v2.v.
     generate
         if (FRAC_W != 5 || ACC_W != 16) begin : unsupported_parameters
             initial begin
