@@ -270,9 +270,7 @@ module fp4_mac_ref_v2_bounded_exact #(
     // Verified correct ONLY for the default FRAC_W=5, ACC_W=16 -- both
     // the exact-detection thresholds and the 16/18-bit derivation are
     // tied to ACC_W=16 (2^16=65536 is the saturation threshold itself)
-    // and to FP4's specific sig_prod range. Same form as v1 and
-    // posit4_mac_ref_v2_bounded.v; Vivado/Genus untested against this
-    // construct in any of the three modules.
+    // and to FP4's specific sig_prod range. Same form as posit4_mac_ref_v2_bounded.v.
     generate
         if (FRAC_W != 5 || ACC_W != 16) begin : unsupported_parameters
             initial begin
